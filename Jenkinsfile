@@ -6,9 +6,7 @@ pipeline{
 					MAVEN_HOME = '/usr/share/maven'
 				}
 			steps{
-				script{
-					sh 'echo STARTING DEPLOYING'
-				}
+					echo 'STARTING DEPLOYING
 				
 				rtMavenDeployer (
 					id: 'BUBBLE_SORT',
@@ -20,9 +18,8 @@ pipeline{
 					goals: 'install',
 					deployerId: 'BUBBLE_SORT'
 				)
-				script{
-					sh 'echo FINING DEPLOYING'
-				}
+					echo FINING DEPLOYING'
+				
 			
 			}
 		}
